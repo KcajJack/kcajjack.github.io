@@ -1,60 +1,90 @@
-jekyll-foundation-5-starter
-===========================
+~~~
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+~~~
 
-**NOTE: Check out my new [jekyll-foundation-6-starter](https://github.com/daigofuji/jekyll-foundation-6-starter/)**
+# Hydejack
+Hydejack is a cutting-edge Jekyll theme that combines the best of static sites and modern web apps.
+It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
+page-load speed or SEO.
+
+> The complete package for professionals: A [blog], a [portfolio] and a [resume].
+
+It aims to be the complete package for professionals on the web.
+It features a blog suitable for both prose and technical documentation,
+a showcase for projects and a resume that fits with the rest of the design.
+
+## [Demo](https://qwtel.com/hydejack/)
+It's best to just [see it in action](https://qwtel.com/hydejack/).
+
+## Features
+Both the PRO *and* free version includes all of the features listed below:
+
+* Full in-app page loading — no Flash of White, no Flash of Unstyled Content[^1]
+* Advanced animations, inspired by Material Design
+* A customizable sidebar that turns into a touch-enabled app drawer on mobile
+* Near-perfect [Google PageSpeed Score][gpss][^2]
+* Even higher *perceived speed* thanks to pre-fetching and latency-hiding
+* Support for categories and tags — even when hosting on GitHub Pages
+* Built-in collection of social media icons
+* Author section below each article and multiple authors
+* Simple and semantic HTML — can be viewed even with text-based browsers
+* Progressive enhancement — sacrifice features, not content
+* Google Analytics and Google Fonts support
+* Blog layout with pagination
+* Syntax highlighting
+* Math formulas via LaTeX
+* Disqus comments
+* RSS feed
+* Print layout
+
+Questions? Send a mail to [mail@qwtel.com](mailto:mail@qwtel.com), or tweet [`@qwtel`](https://www.twitter.com/qwtel).
+
+## [Documentation][docs]
+Hydejack is documented extensively.
+You can read it [here][docs] or in the [repository's wiki][wiki], or [download the PDF][download].
+
+## Download
+There are two versions of Hydejack: The Free Version includes basic blogging functionality,
+as did previous versions of the theme.
+The new PRO Version includes additional features for professionals:
+A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
+
+This table details what is and isn't included in each respective version.
+
+| | Free Version | PRO Version |
+|:-|:-:|:-:|
+| Blog | ✔️ | ✔️ |
+| Features (see above) | ✔️ | ✔️ |
+| [Portfolio] | | ✔️ |
+| [Resume] | | ✔️ |
+| [Welcome] | | ✔️ |
+| Briefcase full of $100 bills | | |
+| License | MIT | [PRO] |
+| Price | Free | $29 |
+| | [**Download on GitHub**][download]<br/> – or – <br/>[**Use the RubyGem**][gem] | [**Buy on Simple Goods**][buy] [^3] |
 
 
-Start [a github pages](https://pages.github.com/) website powerd by [Jekyll](http://jekyllrb.com/docs/quickstart/) using [Foundation/SCSS](http://foundation.zurb.com/docs/sass.html) in under 5 minutes! 
+[^1]: Applies after the initial page load.  
+[^2]: Actual page load speed depends on your hosting provider as well as discipline regarding resolution of images and
+usage of 3rd party plugins.  
+[^3]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
 
-### What it is.
-
-Ever wanted a simple but nice looking responsive website as your project page or page for your repo? Are you in [a hackathon](http://baseballhackday.com) needing to put up a working website in minutes? I do. Here is what I do, and I am sharing for you to use it, free. Free as in free speach AND free beer.
-
-You can see [the working example site here](http://daigofuji.github.io/jekyll-foundation-5-starter/)
-
-### For User & Organization Pages
-See [github documentation](https://help.github.com/articles/user-organization-and-project-pages/)
-
-1. Fork or copy this repo to your user or project
-2. From the `settings` rename the repo to `username.github.io` naming scheme.
-
-### For Project Pages
-See [github documentation](https://help.github.com/articles/user-organization-and-project-pages/#project-pages)
-
-1. Create a `gh-pages` branch, i.e. `git checkout -b gh-pages`
-2. [Download the contents of this repo](https://github.com/daigofuji/jekyll-foundation-5-starter/archive/master.zip)
-3. Replace the entire branch contents with unzipped stuff
-4. Add, Commit then Publish the branch to github, i.e. `git push --set-upstream origin gh-pages`
-
-### To edit contents:
-1. edit `_config.yml`
-2. edit html/md files (hint: `_layouts/default.html` is the base)
-3. edit sass and run `grunt` (hint: Try [editing `scss/_stettings.scss`](http://foundation.zurb.com/docs/using-sass.html))
-4. edit `_include/nav.html` 
-
-Use at your own resk, and follw licence restriction of each products used. Most are MIT (OK to use commercially).
-
-### Useful command:
-
-This assumes you have grunt and bower installed. Make sure you have [npm](https://docs.npmjs.com/getting-started/installing-node), and have ran `npm install -g bower grunt-cli` to install bower and grunt globally.
-
-Run grunt to compile css from sass by simply run `grunt` from your terminal within your repo. 
-It will launch watch by default. <code>control-c</code> to stop. If you only want the css compiled once, run `grunt sass`
-
-To run jekyll locally to test your website while developing, run  `bundle exec jekyll serve --watch` (requires ruby)
-
-Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
-
-Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/articles/using-jekyll-with-pages) is also helpful. 
-
-For more on Foundation stuff that I am using, see [Foundation documentation](http://foundation.zurb.com/docs/sass.html)
-
-
-### Special Thanks
-
-Special thanks to <a href="https://github.com/h5bp/html5-boilerplate">HTML 5 Boilerplate</a> whose code I have based this on.
-
-@kionoshp's <a href="https://github.com/kianoshp/SASS-CSS-Boilerplate">padding-margin</a>. Because it has become part of every site that I manage. 
-
-and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for bing awesome. 
-
+[blog]: https://qwtel.com/hydejack/blog/
+[portfolio]: https://qwtel.com/hydejack/projects/
+[resume]: https://qwtel.com/hydejack/resume/
+[welcome]: https://qwtel.com/hydejack/
+[pro]: https://qwtel.com/hydejack/docs/6.4.0/pro-license/
+[docs]: https://qwtel.com/hydejack/docs/6.4.0/
+[download]: https://github.com/qwtel/hydejack/releases/tag/v6.4.0
+[gem]: https://rubygems.org/gems/jekyll-theme-hydejack/versions/6.4.0
+[buy]: https://app.simplegoods.co/i/AQTTVBOE
+[wiki]: https://github.com/qwtel/hydejack/wiki
+[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fqwtel.com%2Fhydejack%2F
